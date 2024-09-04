@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstproject.HelloController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #f4711e;" BorderPane.alignment="CENTER">
+
+            <ImageView fx:id="imageView" fitHeight="500.0" fitWidth="500.0" layoutX="1.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+         </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="415.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="userName" layoutX="104.0" layoutY="171.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #f4b41a; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="237.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #f4b41a; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="signIn" layoutX="34.0" layoutY="326.0" mnemonicParsing="false" onAction="#signIn" prefHeight="30.0" prefWidth="292.0" style="-fx-background-color: #f4711e;" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <FontAwesomeIconView fill="#f4711e" glyphName="USER" layoutX="67.0" layoutY="195.0" selectionFill="#f4711e" size="24" text="" wrappingWidth="21.5" />
+            <FontAwesomeIconView fill="#f4711e" glyphName="KEY" layoutX="67.0" layoutY="257.0" size="24" />
+            <Button layoutX="35.0" layoutY="386.0" mnemonicParsing="false" onAction="#register" prefHeight="30.0" prefWidth="291.0" style="-fx-background-color: #f4711e;" text="Register" textAlignment="CENTER" textFill="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="171.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/lock.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

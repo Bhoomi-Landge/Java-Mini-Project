@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstproject.Dashboard">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4711e" height="26.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FARM VAULT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutY="27.0" mnemonicParsing="false" onAction="#stor" prefHeight="25.0" prefWidth="136.0" text="Compartment Details" />
+      <Button layoutX="136.0" layoutY="27.0" mnemonicParsing="false" onAction="#addFarmerDetails" prefHeight="25.0" prefWidth="96.0" text="Add Farmer" />
+      <Button layoutX="233.0" layoutY="27.0" mnemonicParsing="false" onAction="#showFarmersDetails" text="Customer Details" />
+      <Button layoutX="339.0" layoutY="27.0" mnemonicParsing="false" onAction="#loginpage" prefHeight="25.0" prefWidth="76.0" text="Log Out" />
+      <ImageView fitHeight="472.0" fitWidth="600.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/share.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4711e" height="52.0" layoutX="598.0" layoutY="347.0" stroke="#f4711e" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4711e" height="58.0" layoutY="344.0" stroke="#f4711e" strokeType="INSIDE" width="600.0" />
+   </children>
+</Pane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstproject.addFarmer">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4711e" height="31.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="643.0" />
+        <Text layoutX="17.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FARM VAULT">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="24.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store Name :">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="25.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name :">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="25.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moblie no.:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="25.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compartment No:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="25.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crops:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Text>
+        <TextField fx:id="storeName" layoutX="141.0" layoutY="56.0" promptText="Warehouse Name" />
+        <TextField fx:id="lastNameField" layoutX="140.0" layoutY="107.0" promptText="Farmer Name" />
+        <TextField fx:id="mobileNumberField" layoutX="140.0" layoutY="148.0" promptText="moblie no." />
+        <TextField fx:id="cropsField" layoutX="140.0" layoutY="191.0" promptText="crops" />
+        <TextField fx:id="compartmentNoField" layoutX="141.0" layoutY="235.0" promptText="No of compartments" />
+        <Text layoutX="28.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Token No:" />
+        <TextField fx:id="tokenNoField" layoutX="141.0" layoutY="274.0" promptText="Token Generated" />
+        <Text layoutX="27.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space Occupied:" />
+        <TextField fx:id="spaceOccupiedField" layoutX="141.0" layoutY="317.0" promptText="Space Crop Took" />
+        <Button fx:id="submit" layoutX="261.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #F4711E;" text="SUBMIT" textFill="#11100f" />
+        <ImageView fitHeight="300.0" fitWidth="385.0" layoutX="339.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/farmer.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="30.0" layoutY="357.0" text="Storage Date">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="400.0" text="Designation Date">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="arrivalDateField" layoutX="140.0" layoutY="354.0" promptText="Arrival Date" />
+        <TextField fx:id="freeDateField" layoutX="140.0" layoutY="397.0" promptText="Storage Free date" />
+
+        <Button layoutX="537.0" layoutY="1.0" mnemonicParsing="false" onAction="#backtoDashboard" text="Dashboard" />
+    </children>
+</Pane>
