@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.sql.*;
 
 public class FarmersDetails {
-    public TableView table_users;
+    public TableView table_userssss;
     public TableColumn fullName;
     public TableColumn storeName;
     public TableColumn compartNo;
